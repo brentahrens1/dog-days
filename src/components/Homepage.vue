@@ -5,6 +5,20 @@
         <div class="image">
           <img src="@/assets/images/cover-elements/cover-frame.png" alt="Young Planet | Dog Days" />
         </div>
+        <div class="background-elements">
+          <div class="background-image">
+            <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+          </div>
+          <div class="car">
+            <img src="@/assets/images/cover-elements/car.png" alt="Young Planet | Dog Days EP Out Now" />
+          </div>
+          <div class="tree">
+            <img src="@/assets/images/cover-elements/tree.png" alt="Young Planet | Dog Days Available on all platforms" />
+          </div>
+          <div class="cloud1">
+            <img src="@/assets/images/cover-elements/cloud1.png" alt="Young Planet | Dog Days Available on all platforms" />
+          </div>
+        </div>
       </div>
       <div class="control-panel">
         <div class="buttons">
@@ -14,7 +28,6 @@
           <button>Contact</button>
         </div>
         <div class="screen">
-
         </div>
       </div>
     </div>
