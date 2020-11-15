@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     creditsToggle() {
-      this.showCredits = !this.showCredits
+      this.showCredits = true
       this.showHome = false
     }
   }
