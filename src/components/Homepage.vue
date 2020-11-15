@@ -93,7 +93,10 @@ export default {
   data() {
     return {
       showHome: true,
-      showCredits: false
+      showCredits: false,
+      showDownload: false,
+      showListen: false,
+      showContact: false
     }
   },
   methods: {
