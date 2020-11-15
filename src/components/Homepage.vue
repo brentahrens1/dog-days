@@ -4,19 +4,31 @@
       <div class="frame">
         <div class="image">
           <img src="@/assets/images/cover-elements/cover-frame.png" alt="Young Planet | Dog Days" />
-        </div>
-        <div class="background-elements">
-          <div class="background-image">
-            <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
-          </div>
-          <div class="car">
-            <img src="@/assets/images/cover-elements/car.png" alt="Young Planet | Dog Days EP Out Now" />
-          </div>
-          <div class="tree">
-            <img src="@/assets/images/cover-elements/tree.png" alt="Young Planet | Dog Days Available on all platforms" />
-          </div>
-          <div class="cloud1">
-            <img src="@/assets/images/cover-elements/cloud1.png" alt="Young Planet | Dog Days Available on all platforms" />
+          <div class="background-elements">
+              <div class="background-image">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="car">
+                <img src="@/assets/images/cover-elements/car.png" alt="Young Planet | Dog Days EP Out Now" />
+              </div>
+              <div class="tree">
+                <img src="@/assets/images/cover-elements/tree.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
+              <div class="cloud1">
+                <img src="@/assets/images/cover-elements/cloud1.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
+              <div class="cloud2">
+                <img src="@/assets/images/cover-elements/cloud2.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
+              <div class="cloud3">
+                <img src="@/assets/images/cover-elements/cloud3.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
+              <div class="cloud4">
+                <img src="@/assets/images/cover-elements/cloud4.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
+              <div class="cloud5">
+                <img src="@/assets/images/cover-elements/cloud5.png" alt="Young Planet | Dog Days Available on all platforms" />
+              </div>
           </div>
         </div>
       </div>
