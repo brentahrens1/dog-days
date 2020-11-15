@@ -148,6 +148,18 @@
                         display: block;
                     }
                 }
+
+                .listen-cover {
+                    display: none;
+                    top: 10%;
+                    left: 15%;
+                    font-size: 4rem;
+                    position: absolute;
+
+                    &.show {
+                        display: block;
+                    }
+                }
             }
 
         }

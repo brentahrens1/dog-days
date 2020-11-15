@@ -33,6 +33,9 @@
           <div class="credits-cover" :class="{show : showCredits}">
             <h1>This is the credits</h1>
           </div>
+          <div class="listen-cover" :class="{show : showListen}">
+            <h1>This is the Listen page</h1>
+          </div>
         </div>
       </div>
       <div class="control-panel">
