@@ -40,6 +40,44 @@
           <button>Contact</button>
         </div>
         <div class="screen">
+          <div class="credits">
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>Cidida</p>
+            </div>
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>July Porter</p>
+            </div>
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>PJ Katz</p>
+            </div>
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>Dallas James</p>
+            </div>
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>Joe Lambert</p>
+            </div>
+            <div class="credits__artist">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              </div>
+              <p>Mitch</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
