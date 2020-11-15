@@ -2,9 +2,9 @@
   <div class="homepage">
     <div class="homepage__container">
       <div class="frame">
-        <div class="image">
+        <div class="home">
           <img src="@/assets/images/cover-elements/cover-frame.png" alt="Young Planet | Dog Days" />
-          <div class="background-elements">
+          <div class="home-cover" :class="{hideHome : !showHome}">
               <div class="background-image">
                 <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
               </div>
@@ -29,6 +29,9 @@
               <div class="cloud5">
                 <img src="@/assets/images/cover-elements/cloud5.png" alt="Young Planet | Dog Days Available on all platforms" />
               </div>
+          </div>
+          <div class="credits-cover" :class="{show : showCredits}">
+            <h1>This is the credits</h1>
           </div>
         </div>
       </div>
@@ -89,12 +92,14 @@ export default {
   name: 'Homepage',
   data() {
     return {
+      showHome: true,
       showCredits: false
     }
   },
   methods: {
     creditsToggle() {
       this.showCredits = !this.showCredits
+      this.showHome = false
     }
   }
 }
