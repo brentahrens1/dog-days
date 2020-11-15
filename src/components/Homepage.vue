@@ -37,7 +37,7 @@
       </div>
       <div class="control-panel">
         <div class="buttons">
-          <button>Listen</button>
+          <button @click="listenToggle">Listen</button>
           <button>Download</button>
           <button @click="creditsToggle">Credits</button>
           <button>Contact</button>
@@ -81,6 +81,22 @@
               <p>Mitch</p>
             </div>
           </div>
+          <div class="listen" :class="{show : showListen}">
+            <div class="listen__platform">
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -102,6 +118,12 @@ export default {
   methods: {
     creditsToggle() {
       this.showCredits = true
+      this.showHome = false
+      this.showListen = false
+    },
+    listenToggle() {
+      this.showListen = true
+      this.showCredits = false
       this.showHome = false
     }
   }
