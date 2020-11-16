@@ -160,6 +160,30 @@
                         display: block;
                     }
                 }
+
+                .download-cover {
+                    display: none;
+                    top: 10%;
+                    left: 15%;
+                    font-size: 4rem;
+                    position: absolute;
+
+                    &.show {
+                        display: block;
+                    }
+                }
+
+                .contact-cover {
+                    display: none;
+                    top: 10%;
+                    left: 15%;
+                    font-size: 4rem;
+                    position: absolute;
+
+                    &.show {
+                        display: block;
+                    }
+                }
             }
 
         }
@@ -252,12 +276,48 @@
                         margin: 0 auto;
 
                         .image {
-                            width: 50%;
+                            width: 30%;
 
                             img {
-                                width: 50%;
+                                width: 100%;
                             }
                         }
+                    }
+                }
+
+                .download {
+                    display: none;
+                    flex-direction: column;
+
+                    &.show {
+                        display: flex;
+                    }
+
+                    &__platform {
+                        width: 90%;
+                        margin: 0 auto;
+
+                        .image {
+                            width: 30%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .contact {
+                    display: none;
+                    flex-direction: column;
+
+                    &.show {
+                        display: flex;
+                    }
+
+                    &__platform {
+                        width: 90%;
+                        margin: 0 auto;
                     }
                 }
             }
