@@ -202,6 +202,30 @@
                     &.show {
                         display: block;
                     }
+
+                    .edge-screen {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                        }
+                    }
+
+                    .daze-screen {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                        }
+                    }
+
+                    .dog-screen {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                        }
+                    }
                 }
 
                 .download-cover {
@@ -275,6 +299,7 @@
                 margin: 0 auto;
                 border: 2px solid #000;
                 background: #D7DADB;
+                position: relative;
 
                 .credits {
                     display: none;
@@ -315,16 +340,39 @@
                         display: flex;
                     }
 
-                    &__platform {
+                    &__song {
                         width: 90%;
                         margin: 0 auto;
+                    }
 
-                        .image {
-                            width: 30%;
+                    .soundcloud {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
 
-                            img {
-                                width: 100%;
-                            }
+                    .edge {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                        }
+                    }
+
+                    .daze {
+                        display: none;
+
+                        &.show {
+                            display: block;
+                        }
+                    }
+
+                    .dog {
+                        display: none;
+
+                        &.show {
+                            display: block;
                         }
                     }
                 }

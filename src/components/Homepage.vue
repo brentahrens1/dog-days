@@ -39,7 +39,15 @@
             <h1 class="joe" :class="{show : showJoe}">This is the Joe</h1>
           </div>
           <div class="listen-cover" :class="{show : showListen}">
-            <h1>This is the Listen page</h1>
+            <div class="edge-screen" :class="{show : showEdge}">
+              <h1>Edge screen</h1>
+            </div>
+            <div class="daze-screen" :class="{show : showDaze}">
+              <h1>Daze screen</h1>
+            </div>
+            <div class="dog-screen" :class="{show : showDog}">
+              <h1>Dog screen</h1>
+            </div>
           </div>
           <div class="download-cover" :class="{show : showDownload}">
             <h1>This is the Download page</h1>
@@ -96,19 +104,25 @@
             </div>
           </div>
           <div class="listen" :class="{show : showListen}">
-            <div class="listen__platform">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+            <div class="listen__song">
+              <div class="song-title">
+                <h3 @click="edgeToggle">Edge Of The World</h3>
               </div>
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+              <div class="song-title">
+                <h3 @click="dazeToggle">In A Daze feat. Dallas James</h3>
               </div>
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+              <div class="song-title">
+                <h3 @click="dogToggle">Dog Days Of Summer</h3>
               </div>
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
-              </div>
+            </div>
+            <div class="soundcloud edge" :class="{show : showEdge}">
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/655015838&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/drugs" title="Drugs" target="_blank" style="color: #cccccc; text-decoration: none;">Drugs</a></div>
+            </div>
+            <div class="soundcloud daze" :class="{show : showDaze}">
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/491595693&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/celebrate-these-moments" title="Celebrate These Moments" target="_blank" style="color: #cccccc; text-decoration: none;">Celebrate These Moments</a></div>
+            </div>
+            <div class="soundcloud dog" :class="{show : showDog}">
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396696534&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/soldier" title="Soldier" target="_blank" style="color: #cccccc; text-decoration: none;">Soldier</a></div>
             </div>
           </div>
           <div class="download" :class="{show : showDownload}">
@@ -157,7 +171,10 @@ export default {
       showPj: false,
       showDallas: false,
       showMitch: false,
-      showJoe: false
+      showJoe: false,
+      showEdge: false,
+      showDaze: false,
+      showDog: false
     }
   },
   methods: {
@@ -244,6 +261,21 @@ export default {
       this.showPj = false
       this.showDallas = false
       this.showMitch = false
+    },
+    edgeToggle() {
+      this.showEdge = true
+      this.showDaze = false
+      this.showDog = false
+    },
+    dazeToggle() {
+      this.showDaze = true
+      this.showEdge = false
+      this.showDog = false
+    },
+    dogToggle() {
+      this.showDog = true
+      this.showEdge = false
+      this.showDaze = false
     },
   }
 }
