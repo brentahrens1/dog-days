@@ -31,7 +31,12 @@
               </div>
           </div>
           <div class="credits-cover" :class="{show : showCredits}">
-            <h1>This is the credits</h1>
+            <h1 class="cidida" :class="{show : showCidida}">This is the Cidida</h1>
+            <h1 class="july" :class="{show : showJuly}">This is the July</h1>
+            <h1 class="pj" :class="{show : showPj}">This is the Pj</h1>
+            <h1 class="dallas" :class="{show : showDallas}">This is the Dallas</h1>
+            <h1 class="mitch" :class="{show : showMitch}">This is the Mitch</h1>
+            <h1 class="joe" :class="{show : showJoe}">This is the Joe</h1>
           </div>
           <div class="listen-cover" :class="{show : showListen}">
             <h1>This is the Listen page</h1>
@@ -53,37 +58,37 @@
         </div>
         <div class="screen">
           <div class="credits" :class="{active : showCredits}">
-            <div class="credits__artist">
+            <div class="credits__artist" @click="cididaToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
               <p>Cidida</p>
             </div>
-            <div class="credits__artist">
+            <div class="credits__artist" @click="julyToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
               <p>July Porter</p>
             </div>
-            <div class="credits__artist">
+            <div class="credits__artist" @click="pjToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
               <p>PJ Katz</p>
             </div>
-            <div class="credits__artist">
+            <div class="credits__artist" @click="dallasToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
               <p>Dallas James</p>
             </div>
-            <div class="credits__artist">
+            <div class="credits__artist" @click="joeToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
               <p>Joe Lambert</p>
             </div>
-            <div class="credits__artist">
+            <div class="credits__artist" @click="mitchToggle">
               <div class="image">
                 <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
               </div>
@@ -146,7 +151,13 @@ export default {
       showCredits: false,
       showDownload: false,
       showListen: false,
-      showContact: false
+      showContact: false,
+      showCidida: false,
+      showJuly: false,
+      showPj: false,
+      showDallas: false,
+      showMitch: false,
+      showJoe: false
     }
   },
   methods: {
@@ -177,7 +188,63 @@ export default {
       this.showListen = false
       this.showCredits = false
       this.showHome = false
-    }
+    },
+    cididaToggle() {
+      this.showCidida = true
+      this.showJuly = false
+      this.showPj = false
+      this.showDallas = false
+      this.showMitch = false
+      this.showJoe = false
+    },
+    cididaToggle() {
+      this.showCidida = true
+      this.showJuly = false
+      this.showPj = false
+      this.showDallas = false
+      this.showMitch = false
+      this.showJoe = false
+    },
+    julyToggle() {
+      this.showJuly = true
+      this.showCidida = false
+      this.showPj = false
+      this.showDallas = false
+      this.showMitch = false
+      this.showJoe = false
+    },
+    pjToggle() {
+      this.showPj = true
+      this.showCidida = false
+      this.showJuly = false
+      this.showDallas = false
+      this.showMitch = false
+      this.showJoe = false
+    },
+    dallasToggle() {
+      this.showDallas = true
+      this.showCidida = false
+      this.showJuly = false
+      this.showPj = false
+      this.showMitch = false
+      this.showJoe = false
+    },
+    mitchToggle() {
+      this.showMitch = true
+      this.showCidida = false
+      this.showJuly = false
+      this.showPj = false
+      this.showDallas = false
+      this.showJoe = false
+    },
+    joeToggle() {
+      this.showJoe = true
+      this.showCidida = false
+      this.showJuly = false
+      this.showPj = false
+      this.showDallas = false
+      this.showMitch = false
+    },
   }
 }
 </script>
