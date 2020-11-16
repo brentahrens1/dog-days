@@ -188,7 +188,7 @@ export default {
     listenToggle() {
       this.showListen = true
       this.showCredits = false
-      this.showHome = false
+      this.showHome = true
       this.showDownload = false
       this.showContact = false
     },
@@ -205,14 +205,6 @@ export default {
       this.showListen = false
       this.showCredits = false
       this.showHome = false
-    },
-    cididaToggle() {
-      this.showCidida = true
-      this.showJuly = false
-      this.showPj = false
-      this.showDallas = false
-      this.showMitch = false
-      this.showJoe = false
     },
     cididaToggle() {
       this.showCidida = true
@@ -266,16 +258,19 @@ export default {
       this.showEdge = true
       this.showDaze = false
       this.showDog = false
+      this.showHome = false
     },
     dazeToggle() {
       this.showDaze = true
       this.showEdge = false
       this.showDog = false
+      this.showHome = false
     },
     dogToggle() {
       this.showDog = true
       this.showEdge = false
       this.showDaze = false
+      this.showHome = false
     },
   }
 }
