@@ -40,7 +40,27 @@
           </div>
           <div class="listen-cover" :class="{show : showListen}">
             <div class="edge-screen" :class="{show : showEdge}">
-              <h1>Edge screen</h1>
+              <div class="background-image">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="left_tree">
+                <img src="@/assets/images/edge-of-the-world/left_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="right_tree">
+                <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="mountains">
+                <img src="@/assets/images/edge-of-the-world/mountains.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="water">
+                <img src="@/assets/images/edge-of-the-world/water.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="truck">
+                <img src="@/assets/images/edge-of-the-world/truck.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="plane">
+                <img src="@/assets/images/edge-of-the-world/plane.png" alt="Young Planet | Dog Days EP" />
+              </div>
             </div>
             <div class="daze-screen" :class="{show : showDaze}">
               <h1>Daze screen</h1>
