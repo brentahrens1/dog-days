@@ -87,7 +87,33 @@
             </div>
           </div>
           <div class="contact-cover" :class="{show : showContact}">
-            <h1>This is the Contact page</h1>
+              <div class="background-image">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="left_tree">
+                <img src="@/assets/images/edge-of-the-world/left_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="right_tree">
+                <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="mountains">
+                <img src="@/assets/images/edge-of-the-world/mountains.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="water">
+                <img src="@/assets/images/edge-of-the-world/water.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="plane">
+                <img src="@/assets/images/contact/plane.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="crab">
+                <img src="@/assets/images/contact/crab.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="thin-water">
+                <img src="@/assets/images/contact/thin-water.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="bottle">
+                <img src="@/assets/images/contact/bottle.png" alt="Young Planet | Dog Days EP" />
+              </div>
           </div>
         </div>
       </div>
