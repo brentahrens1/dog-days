@@ -372,7 +372,7 @@
                         bottom: 23%;
                         right: 45%;
                         z-index: -5;
-                        animation: slide-tree-right 2s ease;
+                        animation: hand-up 2s ease;
     
                         img {
                             width: 100%;
@@ -385,7 +385,7 @@
                         top: 24%;
                         right: 49%;
                         z-index: -5;
-                        animation: slide-tree-right 2s ease;
+                        animation: phone-down 2s ease;
     
                         img {
                             width: 100%;
@@ -628,5 +628,21 @@
     }
     100% {
         transform: translateZ(0);
+    }
+}
+@keyframes hand-up {
+    0% {
+        transform: translateY(700px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes phone-down {
+    0% {
+        transform: translateY(-700px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
