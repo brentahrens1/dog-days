@@ -446,7 +446,6 @@
                         position: absolute;
                         top:20%;
                         z-index: -7;
-                        animation: plane-right 6s linear infinite;
     
                         img {
                             width: 100%;
@@ -731,14 +730,6 @@
     }
     100% {
         transform: translateX(-5000);
-    }
-}
-@keyframes plane-right {
-    0% {
-        transform: translateX(-200px);
-    }
-    100% {
-        transform: translateX(5000);
     }
 }
 @keyframes truck {
