@@ -277,6 +277,12 @@ export default {
       this.showListen = false
       this.showDownload = false
       this.showContact = false
+      this.showCidida = false
+      this.showJuly = false
+      this.showPj = false
+      this.showMitch = false
+      this.showJoe = false
+      this.showDallas = false
     },
     listenToggle() {
       this.showListen = true
@@ -284,6 +290,9 @@ export default {
       this.showHome = true
       this.showDownload = false
       this.showContact = false
+      this.showEdge = false
+      this.showDaze = false
+      this.showDog = false
     },
     downloadToggle() {
       this.showDownload = true
@@ -297,10 +306,6 @@ export default {
       this.showDownload = false
       this.showListen = false
       this.showCredits = false
-      this.showHome = false
-      this.showEdge = false
-      this.showDaze = false
-      this.showDog = false
     },
     cididaToggle() {
       this.showCidida = true
