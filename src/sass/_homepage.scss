@@ -293,7 +293,7 @@
                             position: absolute;
                             top: 20%;
                             z-index: -7;
-                            animation: plane 6s linear infinite;
+                            animation: plane 10s linear;
         
                             img {
                                 width: 100%;
@@ -726,7 +726,7 @@
 }
 @keyframes plane {
     0% {
-        transform: translateX(700px);
+        transform: translateX(900px);
     }
     100% {
         transform: translateX(-5000);
