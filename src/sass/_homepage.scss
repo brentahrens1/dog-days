@@ -320,13 +320,76 @@
 
                 .download-cover {
                     display: none;
-                    top: 10%;
-                    left: 15%;
-                    font-size: 2rem;
-                    position: absolute;
+                    width: 100%;
+                    height: 100%;
 
                     &.show {
                         display: block;
+                    }
+
+                    .background-image {
+                        width: 100%;
+                        height:100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -8;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .left_tree {
+                        width: 35%;
+                        position: absolute;
+                        top: 8%;
+                        left: 0%;
+                        z-index: -5;
+                        animation: slide-tree 2s ease;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .right_tree {
+                        width: 35%;
+                        position: absolute;
+                        top: 8%;
+                        right: 9%;
+                        z-index: -5;
+                        animation: slide-tree-right 2s ease;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .hand {
+                        width: 15%;
+                        position: absolute;
+                        bottom: 23%;
+                        right: 45%;
+                        z-index: -5;
+                        animation: slide-tree-right 2s ease;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .phone {
+                        width: 10%;
+                        position: absolute;
+                        top: 24%;
+                        right: 49%;
+                        z-index: -5;
+                        animation: slide-tree-right 2s ease;
+    
+                        img {
+                            width: 100%;
+                        }
                     }
                 }
 

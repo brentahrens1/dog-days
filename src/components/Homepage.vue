@@ -70,7 +70,21 @@
             </div>
           </div>
           <div class="download-cover" :class="{show : showDownload}">
-            <h1>This is the Download page</h1>
+            <div class="background-image">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+              </div>
+            <div class="hand">
+                <img src="@/assets/images/download/hand.png" alt="Young Planet | Dog Days EP" />
+              </div>
+            <div class="phone">
+                <img src="@/assets/images/download/phone.png" alt="Young Planet | Dog Days EP" />
+            </div>
+            <div class="left_tree">
+              <img src="@/assets/images/edge-of-the-world/left_tree.png" alt="Young Planet | Dog Days EP" />
+            </div>
+            <div class="right_tree">
+              <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
+            </div>
           </div>
           <div class="contact-cover" :class="{show : showContact}">
             <h1>This is the Contact page</h1>
