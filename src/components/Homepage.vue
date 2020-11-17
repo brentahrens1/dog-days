@@ -100,7 +100,7 @@
                 <img src="@/assets/images/edge-of-the-world/mountains.png" alt="Young Planet | Dog Days EP" />
               </div>
               <div class="water">
-                <img src="@/assets/images/edge-of-the-world/water.png" alt="Young Planet | Dog Days EP" />
+                <img src="@/assets/images/contact/thinner-water.png" alt="Young Planet | Dog Days EP" />
               </div>
               <div class="plane">
                 <img src="@/assets/images/contact/plane.png" alt="Young Planet | Dog Days EP" />

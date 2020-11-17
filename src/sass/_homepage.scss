@@ -446,6 +446,7 @@
                         position: absolute;
                         top:20%;
                         z-index: -7;
+                        animation: plane-right 10s linear;
     
                         img {
                             width: 100%;
@@ -455,9 +456,9 @@
                     .water {
                         width: 100%;
                         position: absolute;
-                        top: 0%;
+                        top: 12%;
                         left: 7%;
-                        z-index: -7;
+                        z-index: -2;
     
                         img {
                             width: 100%;
@@ -467,9 +468,9 @@
                     .thin-water {
                         width: 100%;
                         position: absolute;
-                        top: 18%;
+                        top: 8%;
                         left: 7%;
-                        z-index: -2;
+                        z-index: -7;
     
                         img {
                             width: 100%;
@@ -730,6 +731,14 @@
     }
     100% {
         transform: translateX(-5000);
+    }
+}
+@keyframes plane-right {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(5000);
     }
 }
 @keyframes truck {
