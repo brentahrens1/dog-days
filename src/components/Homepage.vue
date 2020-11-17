@@ -31,12 +31,45 @@
               </div>
           </div>
           <div class="credits-cover" :class="{show : showCredits}">
-            <h1 class="cidida" :class="{show : showCidida}">This is the Cidida</h1>
-            <h1 class="july" :class="{show : showJuly}">This is the July</h1>
-            <h1 class="pj" :class="{show : showPj}">This is the Pj</h1>
-            <h1 class="dallas" :class="{show : showDallas}">This is the Dallas</h1>
-            <h1 class="mitch" :class="{show : showMitch}">This is the Mitch</h1>
-            <h1 class="joe" :class="{show : showJoe}">This is the Joe</h1>
+            <div class="background-image">
+              <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+            </div>
+            <div class="left_tree">
+              <img src="@/assets/images/edge-of-the-world/left_tree.png" alt="Young Planet | Dog Days EP" />
+            </div>
+            <div class="right_tree">
+              <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
+            </div>
+            <div class="cidida" :class="{show : showCidida}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="july" :class="{show : showJuly}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/july.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="pj" :class="{show : showPj}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/pj.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="dallas" :class="{show : showDallas}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="mitch" :class="{show : showMitch}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/mitch.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="joe" :class="{show : showJoe}">
+              <div class="image">
+                <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
+              </div>
+            </div>
           </div>
           <div class="listen-cover" :class="{show : showListen}">
             <div class="edge-screen" :class="{show : showEdge}">
