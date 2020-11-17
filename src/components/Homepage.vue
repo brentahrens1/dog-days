@@ -265,6 +265,9 @@ export default {
       this.showListen = false
       this.showCredits = false
       this.showHome = false
+      this.showEdge = false
+      this.showDaze = false
+      this.showDog = false
     },
     cididaToggle() {
       this.showCidida = true
