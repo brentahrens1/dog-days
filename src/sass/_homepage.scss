@@ -249,7 +249,7 @@
                         display: none;
                         width: 38%;
                         position: absolute;
-                        bottom: 5.5%;
+                        bottom: 10%;
                         right: 28%;
                         z-index: -5;
 
@@ -862,6 +862,13 @@
                             left: -2rem;
                             bottom: -.5rem;
                             transform: scale(1.4);
+                        }
+
+                        .joe {
+                            width: 100%;
+                            left: -1.3rem;
+                            bottom: -3.5rem;
+                            transform: scale(1.5);
                         }
 
                         .pj {

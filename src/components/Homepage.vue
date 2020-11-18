@@ -67,7 +67,7 @@
             </div>
             <div class="joe" :class="{show : showJoe}">
               <div class="image">
-                <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
+                <img src="@/assets/images/credits/page/joe.png" alt="Cidida" />
               </div>
             </div>
           </div>
@@ -235,6 +235,15 @@
                 </div>
               </div>
               <p>Mitch</p>
+            </div>
+            <div class="credits__artist" @click="joeToggle">
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image joe">
+                  <img src="@/assets/images/credits/thumbs/joe-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
+              </div>
+              <p>Joe Lambert</p>
             </div>
           </div>
           <div class="listen" :class="{show : showListen}">
