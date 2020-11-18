@@ -583,7 +583,6 @@
                     }
                 }
             }
-
         }
 
         .control-panel {
@@ -649,12 +648,40 @@
                         text-align: center;
                         cursor: pointer;
 
-                        .image {
-                            width: 100%;
+                        .back {
+                            height: 100px;
+                            width: 100px; 
+                            border-radius: 50%;
+                            overflow: hidden;
+                            position: relative;
+                            margin: 0 auto;
 
                             img {
                                 width: 100%;
                             }
+                        }
+
+                        .image {
+                            position: absolute;
+                            bottom: -1rem;
+                            left: 0;
+                            width: 80%;
+
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .cidida, .pj {
+                            width: 100%;
+                            left: -2rem;
+                            bottom: -.5rem;
+                            transform: scale(1.4);
+                        }
+
+                        .pj {
+                            bottom: -.9rem;
                         }
 
                         p {

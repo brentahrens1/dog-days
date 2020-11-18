@@ -160,38 +160,38 @@
         <div class="screen">
           <div class="credits" :class="{active : showCredits}">
             <div class="credits__artist" @click="cididaToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image cidida">
+                  <img src="@/assets/images/credits/thumbs/cidida-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
               </div>
               <p>Cidida</p>
             </div>
             <div class="credits__artist" @click="julyToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image">
+                  <img src="@/assets/images/credits/thumbs/july-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
               </div>
               <p>July Porter</p>
             </div>
             <div class="credits__artist" @click="pjToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image pj">
+                  <img src="@/assets/images/credits/thumbs/pj-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
               </div>
               <p>PJ Katz</p>
             </div>
-            <div class="credits__artist" @click="dallasToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
-              </div>
-              <p>Dallas James</p>
-            </div>
-            <div class="credits__artist" @click="joeToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
-              </div>
-              <p>Joe Lambert</p>
-            </div>
             <div class="credits__artist" @click="mitchToggle">
-              <div class="image">
-                <img src="@/assets/images/placeholder.jpg" alt="Young Planet x PJ Katz | Dog Days" />
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image">
+                  <img src="@/assets/images/credits/thumbs/mitch-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
               </div>
               <p>Mitch</p>
             </div>
