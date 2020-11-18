@@ -404,9 +404,9 @@
                         }
     
                         .right_tree {
-                            width: 15%;
+                            width: 35%;
                             position: absolute;
-                            top: 20%;
+                            top: 8%;
                             right: 9%;
                             z-index: -5;
                             animation: slide-tree-right 2s ease;
@@ -526,7 +526,7 @@
                             bottom: 24.4%;
                             right: 30%;
                             z-index: -5;
-                            animation: slide-tree-right 2s ease;
+                            animation: hand-up 2s ease;
         
                             img {
                                 width: 100%;
@@ -539,7 +539,7 @@
                             bottom: 26.3%;
                             right: 54.4%;
                             z-index: -7;
-                            animation: spiral 4s linear infinite;
+                            animation: spiral 4s linear infinite, hand-up 2s ease;
         
                             img {
                                 width: 100%;
@@ -552,7 +552,7 @@
                             bottom: 26.3%;
                             right: 47.1%;
                             z-index: -7;
-                            animation: spiral 4s linear infinite;
+                            animation: spiral 4s linear infinite, hand-up 2s ease;
         
                             img {
                                 width: 100%;
