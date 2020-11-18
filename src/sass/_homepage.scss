@@ -370,9 +370,193 @@
 
                     .daze-screen {
                         display: none;
+                        width: 100%;
+                        height: 100%;
 
                         &.show {
                             display: block;
+                        }
+
+                        .background-image {
+                            width: 100%;
+                            height:100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: -8;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        .left_tree {
+                            width: 35%;
+                            position: absolute;
+                            top: 8%;
+                            left: 0%;
+                            z-index: -5;
+                            animation: slide-tree 2s ease;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+    
+                        .right_tree {
+                            width: 15%;
+                            position: absolute;
+                            top: 20%;
+                            right: 9%;
+                            z-index: -5;
+                            animation: slide-tree-right 2s ease;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart1 {
+                            width: 10%;
+                            position: absolute;
+                            top: 15%;
+                            left: 30%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart2 {
+                            width: 10%;
+                            position: absolute;
+                            top: 8%;
+                            right: 9%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart3 {
+                            width: 5%;
+                            position: absolute;
+                            top: 20%;
+                            right: 35%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart4 {
+                            width: 10%;
+                            position: absolute;
+                            top: 40%;
+                            left: 25%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart5 {
+                            width: 10%;
+                            position: absolute;
+                            top: 60%;
+                            right: 40%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart6 {
+                            width: 5%;
+                            position: absolute;
+                            top: 50%;
+                            right: 45%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart7 {
+                            width: 10%;
+                            position: absolute;
+                            top: 30%;
+                            right: 30%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .heart8 {
+                            width: 7%;
+                            position: absolute;
+                            top: 25%;
+                            left: 20%;
+                            z-index: -7;
+                            animation: heart 5s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .july-eyes {
+                            width: 54%;
+                            position: absolute;
+                            bottom: 24.4%;
+                            right: 30%;
+                            z-index: -5;
+                            animation: slide-tree-right 2s ease;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .spiral-left {
+                            width: 6%;
+                            position: absolute;
+                            bottom: 26.3%;
+                            right: 54.4%;
+                            z-index: -7;
+                            animation: spiral 4s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .spiral-right {
+                            width: 6%;
+                            position: absolute;
+                            bottom: 26.3%;
+                            right: 47.1%;
+                            z-index: -7;
+                            animation: spiral 4s linear infinite;
+        
+                            img {
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -868,6 +1052,22 @@
     }
     100% {
         transform: translateY(0);
+    }
+}
+@keyframes spiral {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes heart {
+    0% {
+        transform: translateY(600px);
+    }
+    100% {
+        transform: translateY(-600px);
     }
 }
 @keyframes bottle-float {

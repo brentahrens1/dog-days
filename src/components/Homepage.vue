@@ -96,7 +96,48 @@
               </div>
             </div>
             <div class="daze-screen" :class="{show : showDaze}">
-              <h1>Daze screen</h1>
+              <div class="background-image">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="left_tree">
+                <img src="@/assets/images/edge-of-the-world/left_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="right_tree">
+                <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart1">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart2">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart3">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart4">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart5">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart6">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart7">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="heart8">
+                <img src="@/assets/images/in-a-daze/heart.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="july-eyes">
+                <img src="@/assets/images/in-a-daze/july-eyes.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="spiral-left">
+                <img src="@/assets/images/in-a-daze/spiral.png" alt="Young Planet | Dog Days EP" />
+              </div>
+              <div class="spiral-right">
+                <img src="@/assets/images/in-a-daze/spiral.png" alt="Young Planet | Dog Days EP" />
+              </div>
             </div>
             <div class="dog-screen" :class="{show : showDog}">
               <h1>Dog screen</h1>
@@ -104,8 +145,8 @@
           </div>
           <div class="download-cover" :class="{show : showDownload}">
             <div class="background-image">
-                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
-              </div>
+              <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet | Dog Days EP" />
+            </div>
             <div class="hand">
                 <img src="@/assets/images/download/hand.png" alt="Young Planet | Dog Days EP" />
               </div>
