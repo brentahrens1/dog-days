@@ -336,7 +336,7 @@ export default {
       this.showListen = false
       this.showDownload = false
       this.showContact = false
-      this.showCidida = false
+      this.showCidida = true
       this.showJuly = false
       this.showPj = false
       this.showMitch = false
