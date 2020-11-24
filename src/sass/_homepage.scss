@@ -694,11 +694,11 @@
 
                     .plane {
                         width: 10%;
-                        position: absolute;
-                        top:20%;
-                        z-index: -7;
-                        animation: plane-right 10s linear;
-    
+                            position: absolute;
+                            top: 20%;
+                            z-index: -7;
+                            animation: plane 10s linear;
+        
                         img {
                             width: 100%;
                         }

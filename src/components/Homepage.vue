@@ -177,7 +177,7 @@
                 <img src="@/assets/images/contact/thinner-water.png" alt="Young Planet | Dog Days EP" />
               </div>
               <div class="plane">
-                <img src="@/assets/images/contact/plane.png" alt="Young Planet | Dog Days EP" />
+                <img src="@/assets/images/edge-of-the-world/plane.png" alt="Young Planet | Dog Days EP" />
               </div>
               <div class="crab">
                 <img src="@/assets/images/contact/crab.png" alt="Young Planet | Dog Days EP" />
