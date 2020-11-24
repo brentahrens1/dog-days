@@ -57,7 +57,7 @@
             </div>
             <div class="dallas" :class="{show : showDallas}">
               <div class="image">
-                <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
+                <img src="@/assets/images/credits/thumbs/dallas-thumb.png" alt="Cidida" />
               </div>
             </div>
             <div class="mitch" :class="{show : showMitch}">
@@ -226,6 +226,15 @@
                 </div>
               </div>
               <p>PJ Katz</p>
+            </div>
+                 <div class="credits__artist" @click="dallasToggle">
+              <div class="back">
+                <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
+                <div class="image dallas">
+                  <img src="@/assets/images/credits/thumbs/dallas-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
+                </div>
+              </div>
+              <p>Dallas James</p>
             </div>
             <div class="credits__artist" @click="mitchToggle">
               <div class="back">
