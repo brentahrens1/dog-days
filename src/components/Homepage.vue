@@ -239,7 +239,7 @@
             <div class="credits__artist" @click="mitchToggle">
               <div class="back">
                 <img src="@/assets/images/cover-elements/background-main.png" alt="Young Planet x PJ Katz | Dog Days" />
-                <div class="image">
+                <div class="image mitch">
                   <img src="@/assets/images/credits/thumbs/mitch-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
                 </div>
               </div>
