@@ -149,13 +149,13 @@
               <div class="right_tree">
                 <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
               </div>
-              <div class="dog">
+              <div class="dog" :class="{dogShow : dogAnimation, drag : dragOff}">
                 <img src="@/assets/images/dog-days/dog.png" alt="Young Planet | Dog Days EP" />
               </div>
               <div class="door">
                 <img src="@/assets/images/dog-days/door.png" alt="Young Planet | Dog Days EP" />
               </div>
-              <div class="news">
+              <div class="news" :class="{paperShow : paperAnimation, drag : dragOff}">
                 <img src="@/assets/images/dog-days/news.png" alt="Young Planet | Dog Days EP" />
               </div>
             </div>
@@ -343,7 +343,10 @@ export default {
       showJoe: false,
       showEdge: false,
       showDaze: false,
-      showDog: false
+      showDog: false,
+      dogAnimation: false,
+      paperAnimation: false,
+      dragOff: false
     }
   },
   methods: {
@@ -359,6 +362,9 @@ export default {
       this.showMitch = false
       this.showJoe = false
       this.showDallas = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     listenToggle() {
       this.showListen = true
@@ -369,6 +375,9 @@ export default {
       this.showEdge = false
       this.showDaze = false
       this.showDog = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     downloadToggle() {
       this.showDownload = true
@@ -376,12 +385,18 @@ export default {
       this.showCredits = false
       this.showHome = false
       this.showContact = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     contactToggle() {
       this.showContact = true
       this.showDownload = false
       this.showListen = false
       this.showCredits = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     cididaToggle() {
       this.showCidida = true
@@ -436,18 +451,37 @@ export default {
       this.showDaze = false
       this.showDog = false
       this.showHome = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     dazeToggle() {
       this.showDaze = true
       this.showEdge = false
       this.showDog = false
       this.showHome = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     dogToggle() {
       this.showDog = true
       this.showEdge = false
       this.showDaze = false
       this.showHome = false
+      setTimeout(() => {
+        this.paperAnimation = true
+      }, 1000);
+      setTimeout(() => {
+        this.dogAnimation = true
+      }, 3000);
+      setTimeout(() => {
+        this.dragOff = true
+      }, 4000)
+      setTimeout(() => {
+        this.dogAnimation = false
+        this.paperAnimation = false
+      }, 5000)
     },
   }
 }
