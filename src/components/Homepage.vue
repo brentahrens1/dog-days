@@ -320,10 +320,10 @@
       </div>
       <div class="control-panel">
         <div class="buttons">
-          <button @click="listenToggle">Listen</button>
-          <button @click="downloadToggle">Download</button>
-          <button @click="creditsToggle">Credits</button>
-          <button @click="contactToggle">Contact</button>
+          <button @click="listenToggle" class="listen-btn" :class="{show : showListen}">Listen</button>
+          <button @click="downloadToggle" class="download-btn" :class="{show : showDownload}">Download</button>
+          <button @click="creditsToggle" class="credits-btn" :class="{show : showCredits}">Credits</button>
+          <button @click="contactToggle" class="contact-btn" :class="{show : showContact}">Contact</button>
         </div>
         <div class="screen">
           <div class="credits" :class="{active : showCredits}">

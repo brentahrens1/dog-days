@@ -929,13 +929,38 @@
         .control-panel {
             width: 28%;
             height: 100%;
-            background: #888F92;
+            background: #C194A5;
             z-index: 9;
 
             .buttons {
                 display: flex;
                 flex-direction: column;
                 margin-top: 3rem;
+
+                .listen-btn {
+                    background: #D7dadb;
+                    &.show {
+                        background: #F1b87d;
+                    }
+                }
+                .download-btn {
+                    background: #D7dadb;
+                    &.show {
+                        background: #F1b87d;
+                    }
+                }
+                .credits-btn {
+                    background: #D7dadb;
+                    &.show {
+                        background: #F1b87d;
+                    }
+                }
+                .contact-btn {
+                    background: #D7dadb;
+                    &.show {
+                        background: #F1b87d;
+                    }
+                }
 
                 button {
                     width: 90%;
@@ -944,11 +969,11 @@
                     margin-bottom: 1.3rem;
                     font-size: 1.3rem;
                     text-transform: uppercase;
-                    background: #D7DADB;
                     cursor: pointer;
                     position: relative;
                     border: 2px solid #000;
                     z-index: 2;
+                    outline: #000;
 
                     &::after {
                         content: "";
@@ -957,7 +982,6 @@
                         position: absolute;
                         top: .2rem;
                         right: .2rem;
-                        background: #D7DADB;
                         z-index: -1;
                         border: 2px solid #000;
                     }
