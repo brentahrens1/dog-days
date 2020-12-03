@@ -941,24 +941,36 @@
                     background: #D7dadb;
                     &.show {
                         background: #F1b87d;
+                        &::after {
+                            opacity: 0;
+                        }
                     }
                 }
                 .download-btn {
                     background: #D7dadb;
                     &.show {
                         background: #F1b87d;
+                        &::after {
+                            opacity: 0;
+                        }
                     }
                 }
                 .credits-btn {
                     background: #D7dadb;
                     &.show {
                         background: #F1b87d;
+                        &::after {
+                            opacity: 0;
+                        }
                     }
                 }
                 .contact-btn {
                     background: #D7dadb;
                     &.show {
                         background: #F1b87d;
+                        &::after {
+                            opacity: 0;
+                        }
                     }
                 }
 
@@ -971,7 +983,7 @@
                     text-transform: uppercase;
                     cursor: pointer;
                     position: relative;
-                    border: 2px solid #000;
+                    border: 1px solid #000;
                     z-index: 2;
                     outline: #000;
 
@@ -980,10 +992,10 @@
                         width: 100%;
                         height: 100%;
                         position: absolute;
-                        top: .2rem;
+                        bottom: .2rem;
                         right: .2rem;
                         z-index: -1;
-                        border: 2px solid #000;
+                        border: 1px solid #000;
                     }
                 }
             }
