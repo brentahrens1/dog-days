@@ -40,34 +40,144 @@
             <div class="right_tree">
               <img src="@/assets/images/edge-of-the-world/right_tree.png" alt="Young Planet | Dog Days EP" />
             </div>
-            <div class="cidida" :class="{show : showCidida}">
+            <div class="cidida artist" :class="{show : showCidida}">
+              <div class="descripiton">
+                <div class="ep">
+                  <p>Dog Days</p>
+                </div>
+                <div class="category">
+                  <p>Credits</p>
+                </div>
+                <div class="credit">
+                  <p>Rapper Co Producer</p>
+                </div>
+              </div>
               <div class="image">
                 <img src="@/assets/images/credits/page/cidida.png" alt="Cidida" />
               </div>
             </div>
-            <div class="july" :class="{show : showJuly}">
+            <div class="descripiton" :class="{show : showCidida}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
+              </div>
+            </div>
+            <div class="july artist" :class="{show : showJuly}">
+              <div class="descripiton">
+                <div class="ep">
+                  <p>Dog Days</p>
+                </div>
+                <div class="category">
+                  <p>Credits</p>
+                </div>
+                <div class="credit">
+                  <p>Producer Rapper Mix Engineer</p>
+                </div>
+              </div>
               <div class="image">
                 <img src="@/assets/images/credits/page/july.png" alt="Cidida" />
               </div>
             </div>
-            <div class="pj" :class="{show : showPj}">
+            <div class="descripiton" :class="{show : showJuly}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
+              </div>
+            </div>
+            <div class="pj artist" :class="{show : showPj}">
+              <div class="descripiton">
+                <div class="ep">
+                  <p>Dog Days</p>
+                </div>
+                <div class="category">
+                  <p>Credits</p>
+                </div>
+                <div class="credit">
+                  <p>Producer</p>
+                </div>
+              </div>
               <div class="image">
                 <img src="@/assets/images/credits/page/pj.png" alt="Cidida" />
               </div>
             </div>
-            <div class="dallas" :class="{show : showDallas}">
+            <div class="descripiton" :class="{show : showPj}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
+              </div>
+            </div>
+            <div class="dallas artist" :class="{show : showDallas}">
+              <div class="descripiton">
+                <div class="ep">
+                  <p>Dog Days</p>
+                </div>
+                <div class="category">
+                  <p>Credits</p>
+                </div>
+                <div class="credit">
+                  <p>Featured Artist</p>
+                </div>
+              </div>
               <div class="image">
                 <img src="@/assets/images/credits/thumbs/dallas-thumb.png" alt="Cidida" />
               </div>
             </div>
-            <div class="mitch" :class="{show : showMitch}">
+            <div class="descripiton" :class="{show : showDallas}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
+              </div>
+            </div>
+            <div class="mitch artist" :class="{show : showMitch}">
               <div class="image">
                 <img src="@/assets/images/credits/page/mitch.png" alt="Cidida" />
               </div>
             </div>
-            <div class="joe" :class="{show : showJoe}">
+            <div class="descripiton" :class="{show : showMitch}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
+              </div>
+            </div>
+            <div class="joe artist" :class="{show : showJoe}">
               <div class="image">
                 <img src="@/assets/images/credits/page/joe.png" alt="Cidida" />
+              </div>
+            </div>
+            <div class="descripiton" :class="{show : showJoe}">
+              <div class="ep">
+                <p>Dog Days</p>
+              </div>
+              <div class="category">
+                <p>Credits</p>
+              </div>
+              <div class="credit">
+                <p>Cover Art</p>
               </div>
             </div>
           </div>
