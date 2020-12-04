@@ -384,24 +384,27 @@
           </div>
           <div class="listen" :class="{show : showListen}">
             <div class="listen__song">
-              <div class="song-title">
-                <h3 @click="edgeToggle">Edge Of The World</h3>
+              <div class="listen__header">
+                <h1>Music Player</h1>
               </div>
               <div class="song-title">
-                <h3 @click="dazeToggle">In A Daze feat. Dallas James</h3>
+                <h3 @click="edgeToggle">1. Edge Of The World</h3>
               </div>
               <div class="song-title">
-                <h3 @click="dogToggle">Dog Days Of Summer</h3>
+                <h3 @click="dazeToggle">2. In A Daze</h3>
+              </div>
+              <div class="song-title">
+                <h3 @click="dogToggle">3. Dog Days</h3>
               </div>
             </div>
             <div class="soundcloud edge" :class="{show : showEdge}">
-              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/655015838&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/drugs" title="Drugs" target="_blank" style="color: #cccccc; text-decoration: none;">Drugs</a></div>
+              <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/655015838&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/drugs" title="Drugs" target="_blank" style="color: #cccccc; text-decoration: none;">Drugs</a></div>
             </div>
             <div class="soundcloud daze" :class="{show : showDaze}">
-              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/491595693&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/celebrate-these-moments" title="Celebrate These Moments" target="_blank" style="color: #cccccc; text-decoration: none;">Celebrate These Moments</a></div>
+              <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/491595693&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/celebrate-these-moments" title="Celebrate These Moments" target="_blank" style="color: #cccccc; text-decoration: none;">Celebrate These Moments</a></div>
             </div>
             <div class="soundcloud dog" :class="{show : showDog}">
-              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396696534&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/soldier" title="Soldier" target="_blank" style="color: #cccccc; text-decoration: none;">Soldier</a></div>
+              <iframe width="100%" height="100" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396696534&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spinyoungplanet" title="Young_Planet" target="_blank" style="color: #cccccc; text-decoration: none;">Young_Planet</a> · <a href="https://soundcloud.com/spinyoungplanet/soldier" title="Soldier" target="_blank" style="color: #cccccc; text-decoration: none;">Soldier</a></div>
             </div>
           </div>
           <div class="download" :class="{show : showDownload}">
