@@ -64,21 +64,10 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Writer Co-Producer</p>
               </div>
             </div>
             <div class="july artist" :class="{show : showJuly}">
-              <div class="descripiton">
-                <div class="ep">
-                  <p>Dog Days</p>
-                </div>
-                <div class="category">
-                  <p>Credits</p>
-                </div>
-                <div class="credit">
-                  <p>Producer Rapper Mix Engineer</p>
-                </div>
-              </div>
               <div class="image">
                 <img src="@/assets/images/credits/page/july.png" alt="Cidida" />
               </div>
@@ -91,21 +80,10 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Writer Co-Producer Mix Enginner</p>
               </div>
             </div>
             <div class="pj artist" :class="{show : showPj}">
-              <div class="descripiton">
-                <div class="ep">
-                  <p>Dog Days</p>
-                </div>
-                <div class="category">
-                  <p>Credits</p>
-                </div>
-                <div class="credit">
-                  <p>Producer</p>
-                </div>
-              </div>
               <div class="image">
                 <img src="@/assets/images/credits/page/pj.png" alt="Cidida" />
               </div>
@@ -118,21 +96,10 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Producer</p>
               </div>
             </div>
             <div class="dallas artist" :class="{show : showDallas}">
-              <div class="descripiton">
-                <div class="ep">
-                  <p>Dog Days</p>
-                </div>
-                <div class="category">
-                  <p>Credits</p>
-                </div>
-                <div class="credit">
-                  <p>Featured Artist</p>
-                </div>
-              </div>
               <div class="image">
                 <img src="@/assets/images/credits/thumbs/dallas-thumb.png" alt="Cidida" />
               </div>
@@ -145,7 +112,7 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Featured Artist</p>
               </div>
             </div>
             <div class="mitch artist" :class="{show : showMitch}">
@@ -161,7 +128,7 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Album Artwork</p>
               </div>
             </div>
             <div class="joe artist" :class="{show : showJoe}">
@@ -177,7 +144,7 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Cover Art</p>
+                <p>Mastering Engineer</p>
               </div>
             </div>
           </div>
