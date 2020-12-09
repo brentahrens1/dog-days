@@ -392,10 +392,14 @@
           </div>
           <div class="contact" :class="{show : showContact}">
             <div class="contact__platform">
-              <div class="link">
-                <h1>Instagram</h1>
-                <h1>Instagram</h1>
-                <h1>Instagram</h1>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
+              </div>
+              <div class="image">
+                <img src="@/assets/images/placeholder.jpg" />
               </div>
             </div>
           </div>
@@ -477,6 +481,7 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.showHome = false
     },
     cididaToggle() {
       this.showCidida = true
