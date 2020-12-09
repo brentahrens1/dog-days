@@ -3,6 +3,7 @@
     <div class="homepage__container">
       <div class="frame">
         <div class="home">
+          <div class="bottom" />
           <img src="@/assets/images/cover-elements/cover-frame.png" alt="Young Planet | Dog Days" />
           <div class="home-cover" :class="{hideHome : !showHome}">
               <div class="background-image">
