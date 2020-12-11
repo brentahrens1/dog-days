@@ -1018,6 +1018,23 @@
                 background: #D7DADB;
                 position: relative;
 
+                .logo {
+                    position: absolute;
+                    bottom: 2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 90%;
+                    display: none;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    &.show {
+                        display: block;
+                    }
+                }
+
                 .credits {
                     display: none;
                     grid-template-columns: repeat(2, 1fr);
@@ -1149,26 +1166,14 @@
 
                     .edge {
                         display: none;
-
-                        &.show {
-                            display: block;
-                        }
                     }
 
                     .daze {
                         display: none;
-
-                        &.show {
-                            display: block;
-                        }
                     }
 
                     .dog {
                         display: none;
-
-                        &.show {
-                            display: block;
-                        }
                     }
                 }
 
@@ -1525,6 +1530,10 @@
                     height: 88%;
                     margin: 0;
                     margin-right: 1rem;
+
+                    .logo {
+                        width: 50%;
+                    }
     
                     .credits {
                         display: none;
