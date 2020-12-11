@@ -1306,7 +1306,7 @@
         transform: translateX(0px) translateY(200px);
     }
     30%{
-        transform: translateX(0px) translateY(200px);
+        transform: translateX(0px) translateY(150px);
     }
     40%{
         transform: translateX(200px) translateY(0px);
@@ -1478,8 +1478,8 @@
                 .buttons {
                     display: flex;
                     flex-direction: column;
-                    width: 40%;
-                    margin-left: 2rem;
+                    width: 43%;
+                    margin-left: 1rem;
                     margin-top: 1rem;
     
                     button {
@@ -1509,10 +1509,10 @@
                 }
     
                 .screen {
-                    width: 50%;
+                    width: 52%;
                     height: 88%;
                     margin: 0;
-                    margin-right: 2rem;
+                    margin-right: 1rem;
     
                     .credits {
                         display: none;
@@ -1728,7 +1728,7 @@
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2, 1fr);
                     grid-gap: 1rem;
-                    width: 90%;
+                    width: 95%;
                     margin: 0 auto;
                     margin-top: 1rem;
     
@@ -1759,7 +1759,7 @@
                 }
     
                 .screen {
-                    width: 90%;
+                    width: 95%;
                     height: 16rem;
                     margin: 0 auto;
     
