@@ -294,6 +294,9 @@
           <button @click="contactToggle" class="contact-btn" :class="{show : showContact}">Contact</button>
         </div>
         <div class="screen">
+          <div class="logo" :class="{show : showLogo}">
+              <img src="@/assets/images/icons/logo.png" alt="Young Planet x PJ Katz | Dog Days" />
+          </div>
           <div class="credits" :class="{active : showCredits}">
             <div class="credits__artist" @click="cididaToggle">
               <div class="back">
@@ -434,7 +437,8 @@ export default {
       showDog: false,
       dogAnimation: false,
       paperAnimation: false,
-      dragOff: false
+      dragOff: false,
+      showLogo: true,
     }
   },
   methods: {
@@ -453,6 +457,7 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.showLogo = false
     },
     listenToggle() {
       this.showListen = true
@@ -466,6 +471,7 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.showLogo = false
     },
     downloadToggle() {
       this.showDownload = true
@@ -476,6 +482,7 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.showLogo = false
     },
     contactToggle() {
       this.showContact = true
@@ -486,6 +493,7 @@ export default {
       this.paperAnimation = false
       this.dragOff = false
       this.showHome = false
+      this.showLogo = false
     },
     cididaToggle() {
       this.showCidida = true
