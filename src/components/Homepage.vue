@@ -378,29 +378,29 @@
           <div class="download" :class="{show : showDownload}">
             <div class="download__platform">
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/apple.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/spotify.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/soundcloud.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/tidal.png" />
               </div>
             </div>
           </div>
           <div class="contact" :class="{show : showContact}">
             <div class="contact__platform">
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/mail.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/instagram.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/placeholder.jpg" />
+                <img src="@/assets/images/icons/twitter.png" />
               </div>
             </div>
           </div>
