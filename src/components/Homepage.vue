@@ -351,6 +351,9 @@
             </div>
           </div>
           <div class="listen" :class="{show : showListen}">
+            <div class="cover">
+              <img src="@/assets/images/icons/cover.png" alt="Young Planet x PJ Katz | Dog Days" />
+            </div>
             <div class="listen__song">
               <div class="listen__header">
                 <h1>Music Player</h1>
