@@ -801,10 +801,10 @@
                     .phone {
                         width: 10%;
                         position: absolute;
-                        top: 24%;
+                        top: 22%;
                         right: 49%;
                         z-index: -5;
-                        animation: phone-down 2s ease, bounce 1s linear infinite;
+                        animation: phone-down 2s ease, bounce 2s ease-in-out infinite;
     
                         img {
                             width: 100%;
@@ -1470,11 +1470,11 @@
     }
 }
 @keyframes bounce {
-    0% {
-        transform: translateY(-10px);
+    0% { transform: translateY(-5px)  
     }
-    100% {
-        transform: translateY(0);
+    50% { transform: translateY(10px) 
+    }
+    100% { transform: translateY(-5px) 
     }
 }
 
