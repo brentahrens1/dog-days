@@ -727,7 +727,7 @@
                             }
 
                             &.drag {
-                                animation: drag-off 2s ease;
+                                animation: drag-off 2.4s ease;
                             }
 
                             img {
@@ -865,7 +865,7 @@
                             position: absolute;
                             top: 20%;
                             z-index: -7;
-                            animation: plane 10s linear;
+                            animation: plane-right 10s linear;
         
                         img {
                             width: 100%;
@@ -1302,10 +1302,10 @@
 }
 @keyframes plane-right {
     0% {
-        transform: translateX(200px);
+        transform: translateX(-100px);
     }
     100% {
-        transform: translateX(5000);
+        transform: translateX(1000px);
     }
 }
 @keyframes truck {
