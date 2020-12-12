@@ -1043,6 +1043,7 @@
                     grid-template-rows: repeat(4, 1fr);
                     grid-row-gap: 2rem;
                     margin-top: 2rem;
+                    position: relative;
 
                     &.active {
                         display: grid;
@@ -1164,25 +1165,6 @@
                         .song-title {
                             padding: .2rem .5rem;
                         }
-                    }
-
-                    .soundcloud {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        right: 0;
-                    }
-
-                    .edge {
-                        display: none;
-                    }
-
-                    .daze {
-                        display: none;
-                    }
-
-                    .dog {
-                        display: none;
                     }
                 }
 
@@ -1654,37 +1636,6 @@
                                 margin: .3rem;
                             }
                         }
-    
-                        .soundcloud {
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                        }
-    
-                        .edge {
-                            display: none;
-    
-                            &.show {
-                                display: block;
-                            }
-                        }
-    
-                        .daze {
-                            display: none;
-    
-                            &.show {
-                                display: block;
-                            }
-                        }
-    
-                        .dog {
-                            display: none;
-    
-                            &.show {
-                                display: block;
-                            }
-                        }
                     }
     
                     .download {
@@ -1901,37 +1852,6 @@
 
                             h3 {
                                 margin: .3rem;
-                            }
-                        }
-    
-                        .soundcloud {
-                            position: absolute;
-                            bottom: 0;
-                            left: 0;
-                            right: 0;
-                        }
-    
-                        .edge {
-                            display: none;
-    
-                            &.show {
-                                display: block;
-                            }
-                        }
-    
-                        .daze {
-                            display: none;
-    
-                            &.show {
-                                display: block;
-                            }
-                        }
-    
-                        .dog {
-                            display: none;
-    
-                            &.show {
-                                display: block;
                             }
                         }
                     }
