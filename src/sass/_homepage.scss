@@ -1685,11 +1685,13 @@
 
 @media (max-width: 700px) {
     .homepage {
+        height: 100%;
     
         .homepage__container {
             display: flex;
             flex-direction: column;
             overflow: scroll;
+            height: 100%;
     
             .frame {
                 width: 100%;
@@ -1745,7 +1747,7 @@
     
                 .screen {
                     width: 95%;
-                    height: 16rem;
+                    height: 21rem;
                     margin: 0 auto;
     
                     .credits {
