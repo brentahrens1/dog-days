@@ -1476,11 +1476,13 @@
 
 @media (max-width: 1100px) {
     .homepage {
+        height: 100%;
     
         .homepage__container {
             display: flex;
             flex-direction: column;
             overflow: scroll;
+            height: 100%;
     
             .frame {
                 width: 100%;
