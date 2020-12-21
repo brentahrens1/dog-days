@@ -60,8 +60,6 @@
                         right: -27.5%;
                         z-index: -3;
                         animation: slide-left 1s ease;
-                        -webkit-animation: slide-left 1s ease;
-                        -moz-animation: slide-left 1s ease;
     
                         img {
                             width: 100%;
@@ -76,8 +74,8 @@
                         z-index: -7;
                         mix-blend-mode: multiply;
                         animation: slide-tree 2s ease;
-                        -webkit-animation: slide-tree 2s ease;
-                        -moz-animation: slide-tree 2s ease;
+                        // -webkit-animation: slide-tree 2s ease;
+                        // -moz-animation: slide-tree 2s ease;
     
                         img {
                             width: 100%;
@@ -91,8 +89,8 @@
                         left: 12%;
                         z-index: -2;
                         animation: clouds-left 2s ease;
-                        -webkit-animation: clouds-left 2s ease;
-                        -moz-animation: clouds-left 2s ease;
+                        // -webkit-animation: clouds-left 2s ease;
+                        // -moz-animation: clouds-left 2s ease;
     
                         img {
                             width: 100%;
@@ -106,8 +104,8 @@
                         left: 12%;
                         z-index: -2;
                         animation: clouds-left 2s ease;
-                        -webkit-animation: clouds-left 2s ease;
-                        -moz-animation: clouds-left 2s ease;
+                        // -webkit-animation: clouds-left 2s ease;
+                        // -moz-animation: clouds-left 2s ease;
     
                         img {
                             width: 100%;
@@ -607,8 +605,8 @@
                             right: 30%;
                             z-index: -5;
                             animation: hand-up 2s ease;
-                            -webkit-animation: hand-up 2s ease;
-                            -moz-animation: hand-up 2s ease;
+                            // -webkit-animation: hand-up 2s ease;
+                            // -moz-animation: hand-up 2s ease;
         
                             img {
                                 width: 100%;
@@ -622,8 +620,8 @@
                             right: 54.4%;
                             z-index: -7;
                             animation: spiral 4s linear infinite, hand-up 2s ease;
-                            -webkit-animation: spiral 4s linear infinite, hand-up 2s ease;
-                            -moz-animation: spiral 4s linear infinite, hand-up 2s ease;
+                            // -webkit-animation: spiral 4s linear infinite, hand-up 2s ease;
+                            // -moz-animation: spiral 4s linear infinite, hand-up 2s ease;
         
                             img {
                                 width: 100%;
@@ -637,8 +635,8 @@
                             right: 47.1%;
                             z-index: -7;
                             animation: spiral 4s linear infinite, hand-up 2s ease;
-                            -webkit-animation: spiral 4s linear infinite, hand-up 2s ease;
-                            -moz-animation: spiral 4s linear infinite, hand-up 2s ease;
+                            // -webkit-animation: spiral 4s linear infinite, hand-up 2s ease;
+                            // -moz-animation: spiral 4s linear infinite, hand-up 2s ease;
         
                             img {
                                 width: 100%;
