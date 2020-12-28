@@ -1175,6 +1175,14 @@
                         .song-title {
                             padding: .2rem .5rem;
                         }
+
+                        .controls {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 80%;
+                            margin: 0 auto;
+                            margin-top: .5rem;
+                        }
                     }
                 }
 

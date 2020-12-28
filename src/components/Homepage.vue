@@ -361,6 +361,17 @@
               <div class="listen__header">
                 <h1>Music Player</h1>
               </div>
+              <div class="controls">
+                <div class="icon">
+                  <img src="@/assets/images/music-player/back.png" alt="filler" />
+                </div>
+                <div class="icon">
+                  <img src="@/assets/images/music-player/play.png" alt="filler" />
+                </div>
+                <div class="icon">
+                  <img src="@/assets/images/music-player/forward.png" alt="filler" />
+                </div>
+              </div>
               <div class="song-title">
                 <h3 @click="edgeToggle">1. Edge Of The World</h3>
               </div>
