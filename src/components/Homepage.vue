@@ -535,7 +535,7 @@ export default {
       this.spiralEyes = false
       setTimeout(() => {
         this.phoneBouncing = true
-      }, 2100);
+      }, 2000);
     },
     contactToggle() {
       this.showContact = true
