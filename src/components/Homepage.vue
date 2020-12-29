@@ -361,11 +361,39 @@
               <div class="listen__header">
                 <h1>Music Player</h1>
               </div>
-              <div class="controls">
+              <div class="controls one" :class="{show: playToggleOne}">
                 <div class="icon">
                   <img src="@/assets/images/music-player/back.png" alt="filler" />
                 </div>
-                <div class="icon play" :class="{active : isPlaying }">
+                <div @click="playOne" class="icon play" :class="{active : isPlaying }">
+                  <img src="@/assets/images/music-player/play.png" alt="filler" />
+                </div>
+                <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
+                  <img src="@/assets/images/music-player/pause.png" alt="filler" />
+                </div>
+                <div class="icon">
+                  <img src="@/assets/images/music-player/forward.png" alt="filler" />
+                </div>
+              </div>
+              <div class="controls two" :class="{show: playToggleTwo}">
+                <div class="icon">
+                  <img src="@/assets/images/music-player/back.png" alt="filler" />
+                </div>
+                <div @click="playTwo" class="icon play" :class="{active : isPlaying }">
+                  <img src="@/assets/images/music-player/play.png" alt="filler" />
+                </div>
+                <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
+                  <img src="@/assets/images/music-player/pause.png" alt="filler" />
+                </div>
+                <div class="icon">
+                  <img src="@/assets/images/music-player/forward.png" alt="filler" />
+                </div>
+              </div>
+              <div class="controls three" :class="{show: playToggleThree}">
+                <div class="icon">
+                  <img src="@/assets/images/music-player/back.png" alt="filler" />
+                </div>
+                <div @click="playThree" class="icon play" :class="{active : isPlaying }">
                   <img src="@/assets/images/music-player/play.png" alt="filler" />
                 </div>
                 <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
@@ -447,7 +475,10 @@ export default {
       song: new Audio(require('@/assets/audio/nyc-landing.mp3')),
       train: new Audio(require('@/assets/audio/train.mp3')),
       sound: new Audio(require('@/assets/audio/sound.mp3')),
-      isPlaying: false
+      isPlaying: false,
+      playToggleOne: false,
+      playToggleTwo: false,
+      playToggleThree: false,
     }
   },
   methods: {
@@ -565,6 +596,9 @@ export default {
       this.sound.pause()
       this.train.pause()
       this.isPlaying = true
+      this.playToggleOne = true
+      this.playToggleTwo = false
+      this.playToggleThree = false
     },
     dazeToggle() {
       this.showDaze = true
@@ -578,7 +612,9 @@ export default {
       this.sound.play()
       this.train.pause()
       this.isPlaying = true
-      console.log(this.isPlaying)
+      this.playToggleTwo = true
+      this.playToggleOne = false
+      this.playToggleThree = false
     },
     dogToggle() {
       this.showDog = true
@@ -589,6 +625,9 @@ export default {
       this.sound.pause()
       this.train.play()
       this.isPlaying = true
+      this.playToggleThree = true
+      this.playToggleOne = false
+      this.playToggleTwo = false
       setTimeout(() => {
         this.paperAnimation = true
       }, 1000);
@@ -608,7 +647,19 @@ export default {
       this.train.pause()
       this.song.pause()
       this.sound.pause()
-    }
+    },
+    playOne() {
+      this.song.play()
+      this.isPlaying = true
+    },
+    playTwo() {
+      this.sound.play()
+      this.isPlaying = true
+    },
+    playThree() {
+      this.train.play()
+      this.isPlaying = true
+    },
   }
 }
 </script>

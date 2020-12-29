@@ -1180,7 +1180,28 @@
                             justify-content: space-between;
                             width: 80%;
                             margin: 0 auto;
-                            margin-top: .5rem;
+                            margin-top: 1rem;
+
+                            &.one {
+                                display: none;
+                                &.show {
+                                    display: flex;
+                                }
+                            }
+
+                            &.two {
+                                display: none;
+                                &.show {
+                                    display: flex;
+                                }
+                            }
+
+                            &.three {
+                                display: none;
+                                &.show {
+                                    display: flex;
+                                }
+                            }
 
                             .play {
                                 display: block;
