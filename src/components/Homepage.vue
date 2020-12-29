@@ -365,8 +365,11 @@
                 <div class="icon">
                   <img src="@/assets/images/music-player/back.png" alt="filler" />
                 </div>
-                <div class="icon">
+                <div class="icon play" :class="{active : isPlaying }">
                   <img src="@/assets/images/music-player/play.png" alt="filler" />
+                </div>
+                <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
+                  <img src="@/assets/images/music-player/pause.png" alt="filler" />
                 </div>
                 <div class="icon">
                   <img src="@/assets/images/music-player/forward.png" alt="filler" />
@@ -441,6 +444,10 @@ export default {
       paperAnimation: false,
       dragOff: false,
       showLogo: true,
+      song: new Audio(require('@/assets/audio/nyc-landing.mp3')),
+      train: new Audio(require('@/assets/audio/train.mp3')),
+      sound: new Audio(require('@/assets/audio/sound.mp3')),
+      isPlaying: false
     }
   },
   methods: {
@@ -462,6 +469,7 @@ export default {
       this.showLogo = false
     },
     listenToggle() {
+      console.log(this.song)
       this.showListen = true
       this.showCredits = false
       this.showHome = true
@@ -553,6 +561,10 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.song.play()
+      this.sound.pause()
+      this.train.pause()
+      this.isPlaying = true
     },
     dazeToggle() {
       this.showDaze = true
@@ -562,12 +574,21 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.song.pause()
+      this.sound.play()
+      this.train.pause()
+      this.isPlaying = true
+      console.log(this.isPlaying)
     },
     dogToggle() {
       this.showDog = true
       this.showEdge = false
       this.showDaze = false
       this.showHome = false
+      this.song.pause()
+      this.sound.pause()
+      this.train.play()
+      this.isPlaying = true
       setTimeout(() => {
         this.paperAnimation = true
       }, 1000);
@@ -582,6 +603,12 @@ export default {
         this.paperAnimation = false
       }, 5000)
     },
+    pauseBtn() {
+      this.isPlaying = false
+      this.train.pause()
+      this.song.pause()
+      this.sound.pause()
+    }
   }
 }
 </script>

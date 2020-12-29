@@ -146,7 +146,6 @@
                         top: 20%;
                         right: 25.8%;
                         z-index: -2;
-                        transform: rotate(-2deg);
                         animation: clouds-right 2s ease;
     
                         img {
@@ -1182,6 +1181,20 @@
                             width: 80%;
                             margin: 0 auto;
                             margin-top: .5rem;
+
+                            .play {
+                                display: block;
+                                &.active {
+                                    display: none;
+                                }
+                            }
+
+                            .pause {
+                                display: none;
+                                &.active {
+                                    display: block;
+                                }
+                            }
                         }
                     }
                 }
