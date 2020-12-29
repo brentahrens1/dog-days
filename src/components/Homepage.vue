@@ -506,7 +506,6 @@ export default {
       this.spiralEyes = false
     },
     listenToggle() {
-      console.log(this.song)
       this.showListen = true
       this.showCredits = false
       this.showHome = true
@@ -731,6 +730,9 @@ export default {
       this.showEdge = true
       this.showDog = false
       this.showDaze = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     backOne() {
       this.dog.play()
@@ -769,6 +771,9 @@ export default {
       this.showDog = false
       this.showDaze = false
       this.spiralEyes = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     backThree() {
       this.daze.play()
