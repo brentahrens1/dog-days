@@ -623,7 +623,7 @@
                             animation: hand-up 2s ease;
 
                             &.active {
-                                animation: spiral 4s infinite;
+                                animation: spiral 4s linear infinite;
                             }
         
                             img {
@@ -640,7 +640,7 @@
                             animation:  hand-up 2s ease;
 
                             &.active {
-                                animation: spiral 4s infinite;
+                                animation: spiral 4s linear infinite;
                             }
         
                             img {

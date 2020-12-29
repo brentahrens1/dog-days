@@ -687,6 +687,12 @@ export default {
       this.playToggleTwo = true
       this.playToggleOne = false
       this.playToggleThree = false
+      this.showDaze = true
+      this.showDog = false
+      this.showEdge = false
+      setTimeout(() => {
+        this.spiralEyes = true
+      }, 2000);
     },
     forwardTwo() {
       this.dog.play()
@@ -696,6 +702,23 @@ export default {
       this.playToggleTwo = false
       this.playToggleOne = false
       this.playToggleThree = true
+      this.showDog = true
+      this.showDaze = false
+      this.showEdge = false
+      this.spiralEyes = false
+      setTimeout(() => {
+        this.paperAnimation = true
+      }, 1000);
+      setTimeout(() => {
+        this.dogAnimation = true
+      }, 3000);
+      setTimeout(() => {
+        this.dragOff = true
+      }, 4000)
+      setTimeout(() => {
+        this.dogAnimation = false
+        this.paperAnimation = false
+      }, 5000)
     },
     forwardThree() {
       this.edge.play()
@@ -705,6 +728,9 @@ export default {
       this.playToggleTwo = false
       this.playToggleOne = true
       this.playToggleThree = false
+      this.showEdge = true
+      this.showDog = false
+      this.showDaze = false
     },
     backOne() {
       this.dog.play()
@@ -714,6 +740,22 @@ export default {
       this.playToggleTwo = false
       this.playToggleOne = false
       this.playToggleThree = true
+      this.showDog = true
+      this.showDaze = false
+      this.showEdge = false
+      setTimeout(() => {
+        this.paperAnimation = true
+      }, 1000);
+      setTimeout(() => {
+        this.dogAnimation = true
+      }, 3000);
+      setTimeout(() => {
+        this.dragOff = true
+      }, 4000)
+      setTimeout(() => {
+        this.dogAnimation = false
+        this.paperAnimation = false
+      }, 5000)
     },
     backTwo() {
       this.edge.play()
@@ -723,6 +765,10 @@ export default {
       this.playToggleTwo = false
       this.playToggleOne = true
       this.playToggleThree = false
+      this.showEdge = true
+      this.showDog = false
+      this.showDaze = false
+      this.spiralEyes = false
     },
     backThree() {
       this.daze.play()
@@ -732,6 +778,12 @@ export default {
       this.playToggleTwo = true
       this.playToggleOne = false
       this.playToggleThree = false
+      this.showDaze = true
+      this.showDog = false
+      this.showEdge = false
+      setTimeout(() => {
+        this.spiralEyes = true
+      }, 2000);
     },
   }
 }
