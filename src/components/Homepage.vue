@@ -403,14 +403,16 @@
                   <img src="@/assets/images/music-player/forward.png" alt="filler" />
                 </div>
               </div>
-              <div class="song-title">
-                <h3 @click="edgeToggle">1. Edge Of The World</h3>
-              </div>
-              <div class="song-title">
-                <h3 @click="dazeToggle">2. In A Daze</h3>
-              </div>
-              <div class="song-title">
-                <h3 @click="dogToggle">3. Dog Days</h3>
+              <div class="songs-container">
+                <div class="song-title">
+                  <h3 @click="edgeToggle">1. Edge Of The World</h3>
+                </div>
+                <div class="song-title">
+                  <h3 @click="dazeToggle">2. In A Daze</h3>
+                </div>
+                <div class="song-title">
+                  <h3 @click="dogToggle">3. Dog Days</h3>
+                </div>
               </div>
             </div>
           </div>
