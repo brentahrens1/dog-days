@@ -472,9 +472,9 @@ export default {
       paperAnimation: false,
       dragOff: false,
       showLogo: true,
-      song: new Audio(require('@/assets/audio/nyc-landing.mp3')),
-      train: new Audio(require('@/assets/audio/train.mp3')),
-      sound: new Audio(require('@/assets/audio/sound.mp3')),
+      edge: new Audio(require('@/assets/audio/edge.mp3')),
+      daze: new Audio(require('@/assets/audio/daze.mp3')),
+      dog: new Audio(require('@/assets/audio/dog.mp3')),
       isPlaying: false,
       playToggleOne: false,
       playToggleTwo: false,
@@ -592,9 +592,9 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
-      this.song.play()
-      this.sound.pause()
-      this.train.pause()
+      this.edge.play()
+      this.daze.pause()
+      this.dog.pause()
       this.isPlaying = true
       this.playToggleOne = true
       this.playToggleTwo = false
@@ -608,9 +608,9 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
-      this.song.pause()
-      this.sound.play()
-      this.train.pause()
+      this.edge.pause()
+      this.daze.play()
+      this.dog.pause()
       this.isPlaying = true
       this.playToggleTwo = true
       this.playToggleOne = false
@@ -621,9 +621,9 @@ export default {
       this.showEdge = false
       this.showDaze = false
       this.showHome = false
-      this.song.pause()
-      this.sound.pause()
-      this.train.play()
+      this.edge.pause()
+      this.daze.pause()
+      this.dog.play()
       this.isPlaying = true
       this.playToggleThree = true
       this.playToggleOne = false
@@ -644,71 +644,71 @@ export default {
     },
     pauseBtn() {
       this.isPlaying = false
-      this.train.pause()
-      this.song.pause()
-      this.sound.pause()
+      this.edge.pause()
+      this.daze.pause()
+      this.dog.pause()
     },
     playOne() {
-      this.song.play()
+      this.edge.play()
       this.isPlaying = true
     },
     playTwo() {
-      this.sound.play()
+      this.daze.play()
       this.isPlaying = true
     },
     playThree() {
-      this.train.play()
+      this.dog.play()
       this.isPlaying = true
     },
     forwardOne() {
-      this.sound.play()
-      this.train.pause()
-      this.song.pause()
+      this.daze.play()
+      this.dog.pause()
+      this.edge.pause()
       this.isPlaying = true
       this.playToggleTwo = true
       this.playToggleOne = false
       this.playToggleThree = false
     },
     forwardTwo() {
-      this.train.play()
-      this.sound.pause()
-      this.song.pause()
+      this.dog.play()
+      this.daze.pause()
+      this.edge.pause()
       this.isPlaying = true
       this.playToggleTwo = false
       this.playToggleOne = false
       this.playToggleThree = true
     },
     forwardThree() {
-      this.song.play()
-      this.sound.pause()
-      this.train.pause()
+      this.edge.play()
+      this.daze.pause()
+      this.dog.pause()
       this.isPlaying = true
       this.playToggleTwo = false
       this.playToggleOne = true
       this.playToggleThree = false
     },
     backOne() {
-      this.train.play()
-      this.sound.pause()
-      this.song.pause()
+      this.dog.play()
+      this.daze.pause()
+      this.edge.pause()
       this.isPlaying = true
       this.playToggleTwo = false
       this.playToggleOne = false
       this.playToggleThree = true
     },
     backTwo() {
-      this.song.play()
-      this.sound.pause()
-      this.train.pause()
+      this.edge.play()
+      this.daze.pause()
+      this.dog.pause()
       this.isPlaying = true
       this.playToggleTwo = false
       this.playToggleOne = true
       this.playToggleThree = false
     },
     backThree() {
-      this.sound.play()
-      this.train.pause()
-      this.song.pause()
+      this.daze.play()
+      this.dog.pause()
+      this.edge.pause()
       this.isPlaying = true
       this.playToggleTwo = true
       this.playToggleOne = false
