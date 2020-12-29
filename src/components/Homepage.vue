@@ -362,7 +362,7 @@
                 <h1>Music Player</h1>
               </div>
               <div class="controls one" :class="{show: playToggleOne}">
-                <div class="icon">
+                <div class="icon" @click="backOne">
                   <img src="@/assets/images/music-player/back.png" alt="filler" />
                 </div>
                 <div @click="playOne" class="icon play" :class="{active : isPlaying }">
@@ -371,12 +371,12 @@
                 <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
                   <img src="@/assets/images/music-player/pause.png" alt="filler" />
                 </div>
-                <div class="icon">
+                <div class="icon" @click="forwardOne">
                   <img src="@/assets/images/music-player/forward.png" alt="filler" />
                 </div>
               </div>
               <div class="controls two" :class="{show: playToggleTwo}">
-                <div class="icon">
+                <div class="icon" @click="backTwo">
                   <img src="@/assets/images/music-player/back.png" alt="filler" />
                 </div>
                 <div @click="playTwo" class="icon play" :class="{active : isPlaying }">
@@ -385,12 +385,12 @@
                 <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
                   <img src="@/assets/images/music-player/pause.png" alt="filler" />
                 </div>
-                <div class="icon">
+                <div class="icon" @click="forwardTwo">
                   <img src="@/assets/images/music-player/forward.png" alt="filler" />
                 </div>
               </div>
               <div class="controls three" :class="{show: playToggleThree}">
-                <div class="icon">
+                <div @click="backThree" class="icon">
                   <img src="@/assets/images/music-player/back.png" alt="filler" />
                 </div>
                 <div @click="playThree" class="icon play" :class="{active : isPlaying }">
@@ -399,7 +399,7 @@
                 <div class="icon pause" :class="{active : isPlaying}" @click="pauseBtn">
                   <img src="@/assets/images/music-player/pause.png" alt="filler" />
                 </div>
-                <div class="icon">
+                <div class="icon" @click="forwardThree">
                   <img src="@/assets/images/music-player/forward.png" alt="filler" />
                 </div>
               </div>
@@ -659,6 +659,60 @@ export default {
     playThree() {
       this.train.play()
       this.isPlaying = true
+    },
+    forwardOne() {
+      this.sound.play()
+      this.train.pause()
+      this.song.pause()
+      this.isPlaying = true
+      this.playToggleTwo = true
+      this.playToggleOne = false
+      this.playToggleThree = false
+    },
+    forwardTwo() {
+      this.train.play()
+      this.sound.pause()
+      this.song.pause()
+      this.isPlaying = true
+      this.playToggleTwo = false
+      this.playToggleOne = false
+      this.playToggleThree = true
+    },
+    forwardThree() {
+      this.song.play()
+      this.sound.pause()
+      this.train.pause()
+      this.isPlaying = true
+      this.playToggleTwo = false
+      this.playToggleOne = true
+      this.playToggleThree = false
+    },
+    backOne() {
+      this.train.play()
+      this.sound.pause()
+      this.song.pause()
+      this.isPlaying = true
+      this.playToggleTwo = false
+      this.playToggleOne = false
+      this.playToggleThree = true
+    },
+    backTwo() {
+      this.song.play()
+      this.sound.pause()
+      this.train.pause()
+      this.isPlaying = true
+      this.playToggleTwo = false
+      this.playToggleOne = true
+      this.playToggleThree = false
+    },
+    backThree() {
+      this.sound.play()
+      this.train.pause()
+      this.song.pause()
+      this.isPlaying = true
+      this.playToggleTwo = true
+      this.playToggleOne = false
+      this.playToggleThree = false
     },
   }
 }
