@@ -210,10 +210,10 @@
               <div class="july-eyes">
                 <img src="@/assets/images/in-a-daze/july-eyes.png" alt="Young Planet | Dog Days EP" />
               </div>
-              <div class="spiral-left">
+              <div class="spiral-left" :class="{active : spiralEyes}">
                 <img src="@/assets/images/in-a-daze/spiral.png" alt="Young Planet | Dog Days EP" />
               </div>
-              <div class="spiral-right">
+              <div class="spiral-right" :class="{active : spiralEyes}">
                 <img src="@/assets/images/in-a-daze/spiral.png" alt="Young Planet | Dog Days EP" />
               </div>
             </div>
@@ -245,7 +245,7 @@
             <div class="hand">
                 <img src="@/assets/images/download/hand.png" alt="Young Planet | Dog Days EP" />
               </div>
-            <div class="phone">
+            <div class="phone" :class="{active : phoneBouncing}">
                 <img src="@/assets/images/download/phone.png" alt="Young Planet | Dog Days EP" />
             </div>
             <div class="left_tree">
@@ -479,6 +479,8 @@ export default {
       playToggleOne: false,
       playToggleTwo: false,
       playToggleThree: false,
+      spiralEyes: false,
+      phoneBouncing: false
     }
   },
   methods: {
@@ -498,6 +500,8 @@ export default {
       this.paperAnimation = false
       this.dragOff = false
       this.showLogo = false
+      this.phoneBouncing = false
+      this.spiralEyes = false
     },
     listenToggle() {
       console.log(this.song)
@@ -513,6 +517,8 @@ export default {
       this.paperAnimation = false
       this.dragOff = false
       this.showLogo = false
+      this.phoneBouncing = false
+      this.spiralEyes = false
     },
     downloadToggle() {
       this.showDownload = true
@@ -524,6 +530,10 @@ export default {
       this.paperAnimation = false
       this.dragOff = false
       this.showLogo = false
+      this.spiralEyes = false
+      setTimeout(() => {
+        this.phoneBouncing = true
+      }, 2100);
     },
     contactToggle() {
       this.showContact = true
@@ -535,6 +545,8 @@ export default {
       this.dragOff = false
       this.showHome = false
       this.showLogo = false
+      this.phoneBouncing = false
+      this.spiralEyes = false
     },
     cididaToggle() {
       this.showCidida = true
@@ -599,6 +611,7 @@ export default {
       this.playToggleOne = true
       this.playToggleTwo = false
       this.playToggleThree = false
+      this.spiralEyes = false
     },
     dazeToggle() {
       this.showDaze = true
@@ -615,6 +628,9 @@ export default {
       this.playToggleTwo = true
       this.playToggleOne = false
       this.playToggleThree = false
+      setTimeout(() => {
+        this.spiralEyes = true
+      }, 2000);
     },
     dogToggle() {
       this.showDog = true
@@ -628,6 +644,7 @@ export default {
       this.playToggleThree = true
       this.playToggleOne = false
       this.playToggleTwo = false
+      this.spiralEyes = false
       setTimeout(() => {
         this.paperAnimation = true
       }, 1000);
