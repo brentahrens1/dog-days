@@ -1023,7 +1023,7 @@
 
             .screen {
                 width: 90%;
-                height: 57%;
+                height: 60%;
                 margin: 0 auto;
                 border: 2px solid #000;
                 background: #D7DADB;
@@ -1068,8 +1068,8 @@
                         cursor: pointer;
 
                         .back {
-                            height: 100px;
-                            width: 100px; 
+                            height: 85px;
+                            width: 85px; 
                             border-radius: 50%;
                             border: 2px solid #000;
                             overflow: hidden;
@@ -1100,9 +1100,16 @@
 
                         .cidida, .pj {
                             width: 100%;
-                            left: -2rem;
                             bottom: -.5rem;
                             transform: scale(1.4);
+                        }
+
+                        .july {
+                            left: .3rem;
+                        }
+                        
+                        .cidida {
+                            left: -1.6rem;
                         }
 
                         .joe {
@@ -1122,11 +1129,12 @@
                         .mitch {
                             width: 100%;
                             left: .1rem;
-                            bottom: -2.8rem;
+                            bottom: -2.7rem;
                         }
 
                         .pj {
                             bottom: -.9rem;
+                            left: -1.2rem;
                         }
 
                         p {
