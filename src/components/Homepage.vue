@@ -66,7 +66,7 @@
               </div>
               <div class="credit">
                 <p>Writer</p>
-                <div class="bullet">&#8729;</div>
+                <!-- <div class="bullet">•</div> -->
                 <p>Co-Producer</p>
               </div>
             </div>
@@ -84,9 +84,9 @@
               </div>
               <div class="credit">
                 <p>Writer</p>
-                <div class="bullet">&#8729;</div>
+                <!-- <div class="bullet">&#8729;</div> -->
                 <p>Co-Producer</p>
-                <div class="bullet">&#8729;</div>
+                <!-- <div class="bullet">&#8729;</div> -->
                 <p>Mix Enginner</p>
               </div>
             </div>
