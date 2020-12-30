@@ -178,7 +178,7 @@
                             z-index: -5;
 
                             position: absolute;
-                            width: 26%;
+                            width: 28%;
                             left: 16.4%;
                             bottom: 37%;
                             display: flex;
@@ -216,6 +216,13 @@
                                 background: rgba(36,39,40,0.7);
                                 border: 2px solid #000;
                                 border-bottom-right-radius: 4px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                .bullet {
+                                    color: #fff;
+                                }
     
                                 p {
                                     color: #F1F2F3;
@@ -1079,6 +1086,11 @@
                         text-align: center;
                         cursor: pointer;
 
+                        p {
+                            text-transform: uppercase;
+                            font-size: .9rem;
+                        }
+
                         .back {
                             height: 85px;
                             width: 85px; 
@@ -1561,6 +1573,20 @@
                 width: 100%;
                 height: 100%;
                 order: 2;
+
+                .home {
+                    .credits-cover {
+    
+                        .descripiton {
+    
+                            &.show {
+                                width: 38%;
+                                left: 16.4%;
+                                bottom: 65%;
+                            }
+                        }
+                    }
+                }
             }
     
             .control-panel {
@@ -1786,6 +1812,22 @@
                 width: 100%;
                 height: 100%;
                 order: 1;
+
+                .home {
+                    .credits-cover {
+                        .descripiton {
+                            &.show {
+                                width: 40%;
+                                left: 16.4%;
+                                bottom: 65%;
+        
+                                p {
+                                    font-size: .7rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
     
             .control-panel {
@@ -1987,6 +2029,35 @@
                             
                             .image {
                                 width: 17%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .homepage {    
+        .homepage__container {
+    
+            .frame {
+                width: 100%;
+                height: 100%;
+                order: 1;
+
+                .home {
+                    .credits-cover {
+                        .descripiton {
+                            &.show {
+                                width: 53%;
+                                left: 16.4%;
+                                bottom: 63%;
+        
+                                p {
+                                    font-size: 7px;
+                                }
                             }
                         }
                     }

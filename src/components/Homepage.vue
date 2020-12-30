@@ -65,7 +65,9 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Writer Co-Producer</p>
+                <p>Writer</p>
+                <div class="bullet">&#8729;</div>
+                <p>Co-Producer</p>
               </div>
             </div>
             <div class="july artist" :class="{show : showJuly}">
@@ -81,7 +83,11 @@
                 <p>Credits</p>
               </div>
               <div class="credit">
-                <p>Writer Co-Producer Mix Enginner</p>
+                <p>Writer</p>
+                <div class="bullet">&#8729;</div>
+                <p>Co-Producer</p>
+                <div class="bullet">&#8729;</div>
+                <p>Mix Enginner</p>
               </div>
             </div>
             <div class="pj artist" :class="{show : showPj}">
@@ -341,7 +347,7 @@
                   <img src="@/assets/images/credits/thumbs/mitch-thumb.png" alt="Young Planet x PJ Katz | Dog Days" />
                 </div>
               </div>
-              <p>Mitch</p>
+              <p>Hemstitch Mill</p>
             </div>
             <div class="credits__artist" @click="joeToggle">
               <div class="back" :class="{show : showJoe}">
