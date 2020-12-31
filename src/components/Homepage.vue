@@ -484,7 +484,7 @@ export default {
       daze: new Audio(require('@/assets/audio/daze.mp3')),
       dog: new Audio(require('@/assets/audio/dog.mp3')),
       isPlaying: false,
-      playToggleOne: false,
+      playToggleOne: true,
       playToggleTwo: false,
       playToggleThree: false,
       spiralEyes: false,
@@ -611,6 +611,7 @@ export default {
       this.dogAnimation = false
       this.paperAnimation = false
       this.dragOff = false
+      this.edge.load()
       this.edge.play()
       this.daze.pause()
       this.dog.pause()
@@ -629,6 +630,7 @@ export default {
       this.paperAnimation = false
       this.dragOff = false
       this.edge.pause()
+      this.daze.load()
       this.daze.play()
       this.dog.pause()
       this.isPlaying = true
@@ -646,6 +648,7 @@ export default {
       this.showHome = false
       this.edge.pause()
       this.daze.pause()
+      this.dog.load()
       this.dog.play()
       this.isPlaying = true
       this.playToggleThree = true
@@ -685,6 +688,7 @@ export default {
       this.isPlaying = true
     },
     forwardOne() {
+      this.daze.load()
       this.daze.play()
       this.dog.pause()
       this.edge.pause()
@@ -700,6 +704,7 @@ export default {
       }, 2000);
     },
     forwardTwo() {
+      this.dog.load()
       this.dog.play()
       this.daze.pause()
       this.edge.pause()
@@ -726,6 +731,7 @@ export default {
       }, 5000)
     },
     forwardThree() {
+      this.edge.load()
       this.edge.play()
       this.daze.pause()
       this.dog.pause()
@@ -741,6 +747,7 @@ export default {
       this.dragOff = false
     },
     backOne() {
+      this.dog.load()
       this.dog.play()
       this.daze.pause()
       this.edge.pause()
@@ -766,6 +773,7 @@ export default {
       }, 5000)
     },
     backTwo() {
+      this.edge.load()
       this.edge.play()
       this.daze.pause()
       this.dog.pause()
@@ -782,6 +790,7 @@ export default {
       this.dragOff = false
     },
     backThree() {
+      this.daze.load()
       this.daze.play()
       this.dog.pause()
       this.edge.pause()
