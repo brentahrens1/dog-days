@@ -974,7 +974,7 @@
             .buttons {
                 display: flex;
                 flex-direction: column;
-                margin-top: 3rem;
+                margin-top: 1.5rem;
 
                 .listen-btn {
                     background: #D7dadb;
@@ -1556,6 +1556,90 @@
     50% { transform: translateY(5px) 
     }
     100% { transform: translateY(0) 
+    }
+}
+
+@media (max-height: 850px) and (max-width: 2000px) {
+    .homepage {
+    
+        .homepage__container {
+            max-width: 1200px;
+
+            .control-panel {
+                .buttons {
+                    margin-top: 1.5rem;
+                }
+    
+                .screen {
+                    width: 90%;
+                    height: 450px;  
+                    
+                    .credits {
+    
+                        &__artist {
+    
+                            p {
+                                font-size: .7rem;
+                            }
+    
+                            .back {
+                                height: 65px;
+                                width: 65px;
+                            }
+    
+                            .july {
+                                left: .2rem;
+                            }
+                            
+                            .cidida {
+                                left: -1.2rem;
+                            }
+    
+                            .joe {
+                                width: 100%;
+                                left: -1rem;
+                                bottom: -2.2rem;
+                                transform: scale(1.7);
+                            }
+    
+                            .dallas {
+                                width: 100%;
+                                left: .3rem;
+                                bottom: -1rem;
+                                transform: scale(1.1);
+                            }
+    
+                            .mitch {
+                                width: 100%;
+                                left: .1rem;
+                                bottom: -2rem;
+                            }
+    
+                            .pj {
+                                bottom: -.6rem;
+                                left: -1rem;
+                            }
+                        }
+                    }
+    
+                    .listen {
+    
+                        .cover {
+                            display: none;
+                        }
+    
+                        &__song {
+                            width: 90%;
+                            height: 80%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
