@@ -676,8 +676,22 @@ export default {
       this.dog.pause()
     },
     playOne() {
+      this.edge.load()
       this.edge.play()
       this.isPlaying = true
+      this.showHome = false
+      this.daze.pause()
+      this.dog.pause()
+      this.isPlaying = true
+      this.playToggleTwo = false
+      this.playToggleOne = true
+      this.playToggleThree = false
+      this.showEdge = true
+      this.showDog = false
+      this.showDaze = false
+      this.dogAnimation = false
+      this.paperAnimation = false
+      this.dragOff = false
     },
     playTwo() {
       this.daze.play()
