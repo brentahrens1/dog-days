@@ -688,6 +688,7 @@ export default {
       this.isPlaying = true
     },
     forwardOne() {
+      this.showHome = false
       this.daze.load()
       this.daze.play()
       this.dog.pause()
@@ -704,6 +705,7 @@ export default {
       }, 2000);
     },
     forwardTwo() {
+      this.showHome = false
       this.dog.load()
       this.dog.play()
       this.daze.pause()
@@ -731,6 +733,7 @@ export default {
       }, 5000)
     },
     forwardThree() {
+      this.showHome = false
       this.edge.load()
       this.edge.play()
       this.daze.pause()
@@ -747,6 +750,7 @@ export default {
       this.dragOff = false
     },
     backOne() {
+      this.showHome = false
       this.dog.load()
       this.dog.play()
       this.daze.pause()
@@ -773,6 +777,7 @@ export default {
       }, 5000)
     },
     backTwo() {
+      this.showHome = false
       this.edge.load()
       this.edge.play()
       this.daze.pause()
@@ -790,6 +795,7 @@ export default {
       this.dragOff = false
     },
     backThree() {
+      this.showHome = false
       this.daze.load()
       this.daze.play()
       this.dog.pause()
