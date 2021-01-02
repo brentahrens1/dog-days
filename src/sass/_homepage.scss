@@ -1561,9 +1561,10 @@
 
 @media (max-height: 850px) and (max-width: 2000px) {
     .homepage {
+        background: #000;
     
         .homepage__container {
-            max-width: 1100px;
+            max-width: 1125px;
 
             .control-panel {
                 .buttons {
