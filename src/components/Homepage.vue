@@ -444,10 +444,10 @@
                 <img src="@/assets/images/icons/mail.png" />
               </div>
               <div class="image">
-                <img src="@/assets/images/icons/instagram.png" />
+                <a href="https://www.instagram.com/young_planet/" target="_blank"><img src="@/assets/images/icons/instagram.png" /></a>
               </div>
               <div class="image">
-                <img src="@/assets/images/icons/twitter.png" />
+                <a href="https://twitter.com/spinyoungplanet" target="_blank"><img src="@/assets/images/icons/twitter.png" /></a>
               </div>
             </div>
           </div>
